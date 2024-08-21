@@ -1,0 +1,115 @@
+body {
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+}
+
+.calculator__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator__value__one {
+  width: 300px;
+  height: 40px;
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.calculator__value__two {
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.calculator__result {
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.symbol__pluss {
+  width: 158px;
+  height: 40px;
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+
+.symbol__minus {
+  width: 158px;
+  height: 40px;
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+
+.symbol__multiplication {
+  width: 158px;
+  height: 40px;
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  color: white;
+  background-color: rgb(238, 147, 11);
+  cursor: pointer;
+}
+
+.symbol__separation {
+  width: 158px;
+  height: 40px;
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  color: white;
+  background-color: rgb(20, 83, 92);
+  cursor: pointer;
+}
+
+.compute {
+  border-radius: 10px;
+  width: 316px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 10px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.calculator__result {
+  text-align: center;
+}
+
+.header__result {
+  margin: 0;
+}
+
+.calculator__result__text {
+  margin: 0;
+  margin-top: 5px;
+}

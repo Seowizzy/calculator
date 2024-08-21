@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="app.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1 class="header">Калькулятор</h1>
+
+    <section class="calculator">
+      <div class="calculator__item">
+        <input
+          class="calculator__value__one"
+          type="number"
+          value="1"
+          id="input1"
+        />
+        <input
+          class="calculator__value__two"
+          type="number"
+          value="2"
+          id="input2"
+        />
+
+        <div class="symbol">
+          <button class="symbol__pluss" id="pluss">+</button>
+          <button class="symbol__minus" id="minus">-</button>
+        </div>
+
+        <div class="symbol">
+          <button class="symbol__multiplication" id="multiplication">*</button>
+          <button class="symbol__separation" id="separation">/</button>
+        </div>
+
+        <button class="compute" id="compute">Вычислить</button>
+
+        <div class="calculator__result">
+          <h2 class="header__result">Результат:</h2>
+          <p class="calculator__result__text" id="result">5</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

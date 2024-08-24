@@ -48,45 +48,13 @@ body {
   margin-bottom: 10px;
   border-radius: 10px;
   padding-left: 10px;
-  color: white;
-  background-color: green;
+  color: black;
+  background-color: white;
   cursor: pointer;
 }
 
-.symbol__minus {
-  width: 158px;
-  height: 40px;
-  margin: 0;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  padding-left: 10px;
-  color: white;
-  background-color: red;
-  cursor: pointer;
-}
-
-.symbol__multiplication {
-  width: 158px;
-  height: 40px;
-  margin: 0;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  padding-left: 10px;
-  color: white;
-  background-color: rgb(238, 147, 11);
-  cursor: pointer;
-}
-
-.symbol__separation {
-  width: 158px;
-  height: 40px;
-  margin: 0;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  padding-left: 10px;
-  color: white;
-  background-color: rgb(20, 83, 92);
-  cursor: pointer;
+.symbol__pluss:focus {
+  background-color: rgba(128, 128, 128, 0.3);
 }
 
 .compute {

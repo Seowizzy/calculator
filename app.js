@@ -1,46 +1,50 @@
 "use strict";
 
-const resultElement = document.getElementById("result");
-const input1 = document.getElementById("input1");
-const input2 = document.getElementById("input2");
-const plussBtn = document.getElementById("pluss");
-const minusBtn = document.getElementById("minus");
-const multiplicationBtn = document.getElementById("multiplication");
-const separationBtn = document.getElementById("separation");
-const computeBtn = document.getElementById("compute");
-let press = "+";
+const RESULT = document.getElementById("result");
+const INPUT_1 = document.getElementById("input1");
+const INPUT_2 = document.getElementById("input2");
+const PLUSS_BTN = document.getElementById("pluss");
+const MINUS_BTN = document.getElementById("minus");
+const MULTIPLICATION_BTN = document.getElementById("multiplication");
+const SEPARATION_BTN = document.getElementById("separation");
+const COMPUTE_BTN = document.getElementById("compute");
+let operation = "";
 
-plussBtn.onclick = function () {
-  press = "+";
-};
+PLUSS_BTN.addEventListener("click", () => {
+  operation = "+";
+  console.log(operation);
+});
 
-minusBtn.onclick = function () {
-  press = "-";
-};
+MINUS_BTN.addEventListener("click", () => {
+  operation = "-";
+  console.log(operation);
+});
 
-multiplicationBtn.onclick = function () {
-  press = "*";
-};
+MULTIPLICATION_BTN.addEventListener("click", () => {
+  operation = "*";
+  console.log(operation);
+});
 
-separationBtn.onclick = function () {
-  press = "/";
-};
+SEPARATION_BTN.addEventListener("click", () => {
+  operation = "/";
+  console.log(operation);
+});
 
-computeBtn.onclick = function () {
-  if (press == "+") {
-    const sum = Number(input1.value) + Number(input2.value);
-    resultElement.textContent = sum;
-  } else if (press == "-") {
-    const sum = Number(input1.value) - Number(input2.value);
-    resultElement.textContent = sum;
-  } else if (press == "*") {
-    const sum = Number(input1.value) * Number(input2.value);
-    resultElement.textContent = sum;
-  } else if (press == "/") {
-    const sum = Number(input1.value) / Number(input2.value);
-    resultElement.textContent = sum;
+COMPUTE_BTN.onclick = function () {
+  switch (operation) {
+    case "+":
+      RESULT.textContent = Number(INPUT_1.value) + Number(INPUT_2.value);
+      break;
+
+    case "-":
+      RESULT.textContent = Number(INPUT_1.value) - Number(INPUT_2.value);
+      break;
+
+    case "*":
+      RESULT.textContent = Number(INPUT_1.value) * Number(INPUT_2.value);
+      break;
+
+    case "/":
+      RESULT.textContent = Number(INPUT_1.value) / Number(INPUT_2.value);
   }
 };
-
-// Знаю что в конце должен быть просто else без if но почему то не работает(
-// В звонке можем оптимизорвать код. Мне кажется. его можно сделать поменьше

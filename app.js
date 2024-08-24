@@ -1,30 +1,50 @@
 "use strict";
 
-const resultElement = document.getElementById("result");
-const input1 = document.getElementById("input1");
-const input2 = document.getElementById("input2");
-const computeBtn = document.getElementById("compute");
-let plusBtn = "+";
-let minusBtn = "-";
-let multiplicationBtn = "*";
-let separationBtn = "/";
+const RESULT = document.getElementById("result");
+const INPUT_1 = document.getElementById("input1");
+const INPUT_2 = document.getElementById("input2");
+const PLUSS_BTN = document.getElementById("pluss");
+const MINUS_BTN = document.getElementById("minus");
+const MULTIPLICATION_BTN = document.getElementById("multiplication");
+const SEPARATION_BTN = document.getElementById("separation");
+const COMPUTE_BTN = document.getElementById("compute");
+let operation = "";
 
-computeBtn.onclick = function () {
-  switch ((plusBtn, minusBtn, multiplicationBtn, separationBtn)) {
+PLUSS_BTN.addEventListener("click", () => {
+  operation = "+";
+  console.log(operation);
+});
+
+MINUS_BTN.addEventListener("click", () => {
+  operation = "-";
+  console.log(operation);
+});
+
+MULTIPLICATION_BTN.addEventListener("click", () => {
+  operation = "*";
+  console.log(operation);
+});
+
+SEPARATION_BTN.addEventListener("click", () => {
+  operation = "/";
+  console.log(operation);
+});
+
+COMPUTE_BTN.onclick = function () {
+  switch (operation) {
     case "+":
-      resultElement.textContent = Number(input1.value) + Number(input2.value);
+      RESULT.textContent = Number(INPUT_1.value) + Number(INPUT_2.value);
       break;
 
     case "-":
-      resultElement.textContent = Number(input1.value) - Number(input2.value);
+      RESULT.textContent = Number(INPUT_1.value) - Number(INPUT_2.value);
       break;
 
     case "*":
-      resultElement.textContent = Number(input1.value) * Number(input2.value);
+      RESULT.textContent = Number(INPUT_1.value) * Number(INPUT_2.value);
       break;
 
     case "/":
-      resultElement.textContent = Number(input1.value) / Number(input2.value);
-      break;
+      RESULT.textContent = Number(INPUT_1.value) / Number(INPUT_2.value);
   }
 };
